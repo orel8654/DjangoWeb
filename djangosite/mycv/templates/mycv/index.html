@@ -1,2 +1,152 @@
-{% extends 'base.html' %}
-{% block title %}OrlovCV{% endblock %}
+{% extends 'base_mycv.html' %}
+{% block title %}Orlov | CV{% endblock %}
+{% load static %}
+{% block content %}
+<h1 class="text-center shadow-lg p-3 mb-5 bg-body rounded">Python Developer</h1>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <table class="table table-borderless">
+            <td>
+                <img src="{% static 'images/IMG.svg' %}" alt="Ooops...">
+            </td>
+            <td>
+                <td class="bg-warning rounded-pill">
+                    <h1>Егор Орлов</h1>
+                    <h4>Возраст: 24</h4>
+                    <h4>Город: Новосибирск</h4>
+                    <h4>Образование: Высшее (бакалавр), ИТСС, СибГУТИ</h4>
+                    <h4>Телефон: <a href="tel: +79833223298" class="text-decoration-none text-black">+ 7 983 322-32-98</a></h4>
+                    <div class="text-center">
+                        <a href="https://t.me/geoo001" target="_blank"><img src="{% static 'images/telegram.svg' %}" width="50" class="bi bi-telegram"></a>
+                        <a href="https://github.com/orel8654" target="_blank"><img src="{% static 'images/github.svg' %}" width="50" class="bi bi-github"></a>
+                    </div>
+                </td>
+            </td>
+        </table>
+    </div>
+</div>
+
+<h1 class="text-center shadow-lg p-3 mb-5 bg-body rounded">Навыки и опыт работы</h1>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <table class="table table-borderless">
+            <td class="bg-warning rounded-pill">
+                <h1 class="row justify-content-center">Навыки</h1>
+                <h3>Python(Junior). Парсинг сайтов:</h3>
+                <h3>библиотеки BeautifulSoup и Selenium.</h3>
+                <h3>HTML и CSS (Без коммерческих задач).</h3>
+                <h3>Реализация терминальной игры Pong:</h3>
+                <h3>библиотека Turtle.</h3>
+                <h3>Разработка мини-проекта казино на основе</h3>
+                <h3>игры "Угадайка", с записью данных, ставками,</h3>
+                <h3>запросов с сайтов.</h3>
+                <h3>Уровень английского: pre-intermediate</h3>
+            </td>
+            <td>
+                <h1><br></h1>
+                <h1><br></h1>
+                <h1><br></h1>
+                <h1><br></h1>
+                <h1 class="row justify-content-center">Опыт работы</h1>
+                <h3>2016-2019 работа в увльянной сфере</h3>
+                <h4>Должность: Менеджер</h4>
+                <h3>2019-2020 работа в авто-бизнесе</h3>
+                <h4>Должность: Оклейщик, тонировщик</h4>
+                <h3>2020 - по н.в. ИТ сфера</h3>
+                <h4>Без опыта</h4>
+            </td>
+        </table>
+    </div>
+</div>
+
+<h1 class="text-center shadow-lg p-3 mb-5 bg-body rounded">Образование и сертификаты</h1>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <h2 class="row justify-content-center">Диплом о высшем образовании</h2>
+        <br>
+        <img src="{% static 'images/dip.jpg' %}" width="600" alt="Ooops...">
+    </div>
+</div>
+<br>
+<br>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <h2 class="row justify-content-center">Сертификаты дополнительного образования Stepik</h2>
+        <br>
+        <img src="{% static 'images/IMG1.jpg' %}" alt="Ooops..." width="600">
+        <img src="{% static 'images/IMG2.jpg' %}" alt="Ooops..." width="600">
+    </div>
+</div>
+<br>
+<h1 class="text-center shadow-lg p-3 mb-5 bg-body rounded">Хобби</h1>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <table>
+            <td>
+                <div>
+                    <h2 class="row justify-content-center">Автомоделизм</h2>
+                    <h3>Участник соревнований по</h3>
+                    <h3 class="row justify-content-center">автомодельному спорту.</h3>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <div>
+                    <h2 class="row justify-content-center">Хоккей</h2>
+                    <h3 class="row justify-content-center">Любительский (ЛЛХЛ)</h3>
+                </div>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <h2 class="row justify-content-center">Программирование</h2>
+                    <h3>Изучение нового материала</h3>
+                    <h3 class="row justify-content-center">в сфере ИТ. Raspberry Pi</h3>
+                </div>
+            </td>
+        </table>
+    </div>
+</div>
+<br>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'mycv' %}">Наверх</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{% endblock %}

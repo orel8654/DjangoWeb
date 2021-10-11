@@ -7,3 +7,4 @@ from .models import cvClient
 
 def index(request):
     return render(request, template_name='mycv/index.html')
+

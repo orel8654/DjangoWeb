@@ -1,0 +1,48 @@
+{% extends 'base_mycv.html' %}
+{% block title %}Parser{% endblock %}
+{% load static %}
+{% block content %}
+
+<br>
+
+<div class="row justify-content-center">
+    <div class="col-auto bg-danger rounded">
+        <h1 class="text-center">Drom Parser</h1>
+        <h4>Здесь собирается информация с сайта Drom.ru,</h4>
+        <h4>а именно: модель, ссылка на обьявление, цена,</h4>
+        <h4>комплектация, город, двигатель, трансмиссия,</h4>
+        <h4>мощность, привод, цвет, пробег, руль,</h4>
+        <h4>ограничения, розыск, описание.</h4>
+        <br>
+        <h4>Чтобы воспользоваться сервисом, нужно указать на Drom.ru</h4>
+        <h4>фильтры поиска авто и ввести ссылку в форме ниже.</h4>
+        <h4>Процесс может занять некоторое время.</h4>
+        <br>
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <form action="{% url 'dromparser' %}" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="{{ form.link.id_for_label }}" class="form-label">URL адрес:</label>
+                <input type="text" class="form-control">
+                <div class="form-text">Введите ссылку здесь.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row justify-content-center">
+    <div class="col-auto bg-danger rounded-pill">
+        <h4>Либо можете воспользоваться нашим Telegram-Bot</h4>
+    </div>
+</div>
+<br>
+<div class="text-center">
+    <a href="https://t.me/drom_data_bot" target="_blank"><img src="{% static 'images/telegram.svg' %}" width="50" class="bi bi-telegram"></a>
+</div>
+
+{% endblock %}
